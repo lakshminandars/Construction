@@ -1,0 +1,193 @@
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2{
+  font-family:"Lato", sans-serif;
+  text-shadow: 2px 4px 6px rgb(122, 121, 94);
+  font-weight: bold; 
+  color:rgb(255, 255, 255); 
+  position: relative;
+  bottom: 180px;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+h5{
+    color: white;
+}
+
+/* more */
+.services {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 2rem;
+}
+.service-box {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+}
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #888;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+}
+.main-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main-title h1 {
+    font-size: 2.5rem;
+}
+.main-title p {
+    font-size: 1.25rem;
+    color: #888;
+}
+
+.row1{
+    background-color: #888;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+/* about */
+h3{
+    
+    color: black;
+    text-align: center;
+    margin: 5px;
+    height: 35px;
+    margin-top: 50px;
+    font-weight: bolder;
+    
+}
+
+.pic{
+    
+    display: flex;
+    
+}
+
+.pic .img1{
+    width: 350px;
+    height: 650px;
+    /* margin: 5px; */
+}
+
+.pic p{
+    text-align: justify;
+    margin: 10px;
+    font-size:large ;
+}
+
+/* details */
+.row3{
+    width: 1200px;
+    height: 200px;
+    background-color: #555;
+    display: flex;
+    margin: 120px;
+    
+}
+
+.row3 .head{
+    color: #ffa500;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.row4{
+    display: flex;
+}
+
+
+.col{
+    color: #ffa500;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.col1{
+    margin-top: 50px;
+    word-spacing: 20px;
+}
+
+/* latest works */
+
+.h6{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.img4:hover{
+scale: 1.06;
+box-shadow: 2px 4px 6px black;
+}
+
+/* consultation */
+.container1{
+    height: 350px;
+background-color:#3d3b3b;
+
+}
+.h8{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #ffa500;
+
+}
+.btn2{
+    background-color: #ffa500;
+    color: white;
+    margin-left: 750px;
+    border: none;
+    border-radius: 2px;
+    width: 60px;
+}
+
+.bounce {
+    height: 200px;
+    width: 400px;
+    left: 200px; 
+    margin: 10px;
+    padding: 5px;
+}
+
+.bounce:hover{
+    scale: 1.06s;
+}
+
+
+
+    
+
+ 

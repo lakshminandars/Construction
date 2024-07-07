@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- css -->
+     <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- favicon -->
+      <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcaL9eqEynsUfRRMINfGUdDU-insQGDOLNg&s">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+    <!-- nav bar -->
+    <!-- <nav class="navbar bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <H1 style="font-weight: bold; font-size: 20px; color: white;">FAST BUILD  </H1>
+          </a>
+        </div>
+      </nav> -->
+
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid bg-warning ">
+          <a class="navbar-brand " style="font-weight: bold; font-size: 20px; color: white;" href="#">FAST BUILDERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#banner">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#latest">Latest Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#consultation">Consultation</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul> -->
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner(carousal) -->
+       <section id="banner">
+      <div id="carouselExampleCaptions" class="carousel slide "  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img width="100%" height="650px" src=" https://cdn.pixabay.com/photo/2024/05/14/05/38/construction-8760339_1280.jpg" alt="img1">
+            
+            <div class="carousel-caption d-none d-md-block">
+              
+              
+              <h5>Together We Can Make The Difference</h5>
+              <button type="button" class="btn btn-warning  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                More Info
+               </button>
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">More Info</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1>FAST BUILDERS</h1>
+                      <img width="100%" height="200PX" src="data:image/png;base64,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">
+                    </div>
+       
+                    <p>Information is an abstract concept that refers to something which has the power to inform. At the most fundamental level, it pertains to the interpretation of that which may be sensed, or their abstractions.</p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn1 btn-secondary " data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+<button type="button" class="btn btn-warning">Need Help</button>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <img  width="100%" height="650px" src="https://cdn.pixabay.com/photo/2013/11/27/16/01/sunset-219354_960_720.jpg"  alt="img2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Together We Can Make The Difference</h5>
+              <button type="button" class="btn btn-warning">More Info</button>
+<button type="button" class="btn btn-warning">Need Help</button>
+            </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img width="100%" height="650px" src="https://cdn.pixabay.com/photo/2018/05/11/19/09/building-lot-3391379_640.jpg" alt="img3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Together We Can Make The Difference</h5>
+              <button type="button" class="btn btn-warning">More Info</button>
+<button type="button" class="btn btn-warning">Need Help</button>
+            </div>
+              <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+            <!-- </div>
+          </div>
+        </div> --> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+       
+
+      </div>
+      <h2 >Engineering Your Dreams With Us</h2>
+            
+    </section>
+
+    <!-- services -->
+     <section id="Services">
+      <div class="container">
+        <div class="main-title">
+            <h1> What We Offer</h1>
+            <p>We build tomorrow</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="services">
+                      <i class="fa-solid fa-compass-drafting" style="color: #ffffff;"></i>
+                    </div>
+                    <h4>Architecture</h4>
+                    <p>Architecture, The art and technique of designing and building, as distinguished from the skills associated with construction.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="services" style="background-color: #333;">
+                      <i class="fa-solid fa-building" style="color: #ffffff;"></i>
+                    </div>
+                    <h4>Renovation</h4>
+                    <p>Renovation is the process of improving or modernising an old, damaged or defective building.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="services">
+                      <i class="fa-solid fa-screwdriver-wrench" style="color: #ffffff;"></i>
+                    </div>
+                    <h4>Construction</h4>
+                    <p>Construction is the process where contractors build structures for residential or commercial purposes.</p>
+                </div>
+            </div>
+        <button type="button" class="button">View All</button>
+    </div>
+     </section>
+
+     <hr><hr>
+
+     <!-- about us -->
+     <section id="about">
+       
+      <h3 class="head ">About Our Story</h3>
+       <div class="pic">
+        <img class="img1" src="https://media.istockphoto.com/id/1149064328/photo/maintenance-engineers-checking-electricity.jpg?s=612x612&w=0&k=20&c=KVXqCoQBrFT4KfELQ4s1hpcMtKF2a2ieSIFHfLoxEAo=" alt="tim">
+      <div class="container">
+            <p>Turner is a North America-based, international construction services company and is a leading builder in diverse market segments. The company has earned recognition for undertaking large and complex projects, fostering innovation, embracing emerging technologies, and making a difference for their clients, employees and community. With a staff of over 10,000 employees, the company completes $15 billion of construction on 1,500 projects each year. Turner offers clients the accessibility and support of a local firm with the stability and resources of a multi-national organization.
+              Our vision is to be the highest value provider of global construction services and technical expertise. We plan and deliver building projects of all types and sizes—schools and hospitals, stadiums and museums, airports, data centers, offices and more—throughout North America and in 30 countries around the world.Our reputation for integrity, working safely, delivering complex and challenging projects, and driving innovation to bring our whole industry forward has been earned over many years.Henry Turner founded Turner Construction Company in 1902 based on the core values of teamwork, integrity and commitment.Our work has resulted in the transformation of skylines, communities, and the construction industry. Turner first made its mark on the industry by pioneering the use of steel-reinforced concrete for general building, which allowed our company to deliver safer, stronger, and more efficient buildings to our clients. Today, our reach is global, and our people uphold Henry Turner's vision to provide valuable services to clients and build partnerships in the community.“A promise made is a promise delivered,” rings as true today as it did in 1902.
+              Throughout Turner’s history, we set ambitious goals and made formal commitments to enhance safety, care for others, increase diversity and impact in the community, uphold high standards for business integrity, and build ever more sustainable and resilient buildings.We are now connecting these and other efforts in an Environmental, Social and Governance (ESG) strategy to enhance and strengthen our company and the industry.
+        
+            </div>
+        <img class="img1" src="https://media.istockphoto.com/id/623111770/photo/engineers-on-construction-site-with-crane-and-concrete-frame.jpg?s=612x612&w=0&k=20&c=-0HvbHpaPJoyciTTUSaCdYoXkzxbfmMbHHMBr9vpxMU=" alt="tim">
+    </div>
+      </section>
+      <hr><hr>
+
+      
+      <!-- more -->
+       <!-- <section id="more">
+        <center>
+        <div class="row ">
+          <div class="col-6 bounce bg-secondary" style="height: 200px; ">Have an project</div>
+          <div class="col-6 bounce bg-warning">Weekly Update Just For You</div>
+        </div>
+      </center>
+       </section> -->
+
+       <!-- latest projects -->
+        <section id="latest">
+          <p class="h6">Our Latest Projects</p>
+          <div class="row4 m-3 p-3">
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_640.jpg" alt=""></div>
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2021/12/20/09/20/apartment-6882571_640.jpg" alt=""></div>
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2015/10/20/18/57/furniture-998265_640.jpg" alt=""></div>
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2016/12/22/18/20/skyline-1925943_640.jpg" alt=""></div>
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2017/04/10/22/28/residence-2219972_640.jpg" alt=""></div>
+            <div class="col-2"><img class="img4" width="200px" height="200px" src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_640.jpg" alt=""></div>
+          </div>
+        </section>
+        <hr><hr>
+
+        <!-- consultation -->
+         <section id="consultation">
+          <div class="container1 " style="background-color: #3d3b3b;">
+            <div>
+            <p class="h8">Free consultation</p>
+            <form class="row g-3">
+              <div class="col-md-6 w-25 m-3">
+                <label for="inputEmail4" class="form-label text-light ">Name</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6 w-25 me-5  m-3">
+                <label for="inputPassword4" class="form-label text-light">Email</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12 w-25 me-5  m-3">
+                <label for="inputAddress" class="form-label text-light">Mobile Number</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <!-- <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div> -->
+              <div class="col-md-6 w-25  m-3">
+                <label for="inputCity" class="form-label text-light">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4 w-25 me-5  m-3">
+                <label for="inputState" class="form-label text-light">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected hidden>Choose...</option>
+                  <option>Kerala</option>
+                  <option>Tamilnadu</option>
+                  <option>Karnataka</option>
+                </select>
+              </div>
+              <div class="col-md-4 w-25 me-5  m-3">
+                <label for="inputState" class="form-label text-light">Language</label>
+                <select id="inputState" class="form-select">
+                  <option selected hidden>Choose...</option>
+                  <option>English</option>
+                  <option>Tamil</option>
+                  <option>Hindi</option>
+                  <option>Malayalam</option>
+                </select>
+              </div>
+              
+              <div class="col-12">
+
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning ce" data-bs-toggle="modal" data-bs-target="#submit">
+  Submit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Are You Sure To Submit?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are You Sure To Submit?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </div>
+            </form>
+          </div>
+          </div>
+
+         </section>
+
+         <!-- what we offer -->
+       <!-- <section id="offer">
+       
+        <div class="row3 text-center">
+         
+          <h5 class="head m-5 p-5 me-6">50+ <br>
+          <p class="text fs-6 text-light">Employees</p></h5> <br>
+          
+          <h5 class="head m-5 p-5 me-6">10+ <br><p class="text fs-6 text-light" >Partners</p></h5><br>
+          
+          <h5 class="head m-5 p-5 me-6">120+ <br><p class="text fs-6 text-light">Projects Completed</p></h5>
+          
+          <h5 class="head m-5 p-5 me-6">400+ <br><p class="text fs-6 text-light">Satisfied Clients</p></h5>
+        </div>
+     
+       </section>
+       <hr><hr> -->
+
+        <!-- footer -->
+<hr><hr>
+        <!-- Footer -->
+<footer class="text-center text-lg-start bg-secondary text-muted" style="background-color:#3d3b3b;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block m-4">
+      <span style="color: white;">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f text-light"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter text-light"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google text-light"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram text-light"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin text-light"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github text-light"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5 text-light">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-light">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            <i class="fas fa-gem me-3"></i>FAST BUILDERS
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            SERVICES
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-light">Architecture</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-light">Renovation</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-light">Construction</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-light">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>Kochi Kerala</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            fastbuilders@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold text-light" href="https://mdbootstrap.com/">fastbuilders.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+        
+          
+
+
+</body>
+</html>
